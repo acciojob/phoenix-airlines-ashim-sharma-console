@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import "./styles/App.css"; // তোমার CSS থাকলে এখানে সংযুক্ত থাকবে
+import "./styles/App.css"; 
 
 const LandingPage = () => {
   return (
