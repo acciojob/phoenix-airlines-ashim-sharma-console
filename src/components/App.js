@@ -1,10 +1,58 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import FlightSearch from "./pages/FlightSearch";
-import FlightBooking from "./pages/FlightBooking";
-import Confirmation from "./pages/Confirmation";
-import LandingPage from "./pages/LandingPage";
-import './../styles/App.css';
+import "./styles/App.css"; // তোমার CSS থাকলে এখানে সংযুক্ত থাকবে
+
+const LandingPage = () => {
+  return (
+    <div style={{ textAlign: "center" }}>
+      <h1>Welcome to Phoenix Airlines</h1>
+      <img
+        src="https://storage.googleapis.com/acciojob-open-file-collections/landing.png"
+        alt="Landing"
+        style={{ width: "60%", maxWidth: "600px" }}
+      />
+    </div>
+  );
+};
+
+const FlightSearch = () => {
+  return (
+    <div style={{ textAlign: "center" }}>
+      <h2>Search Flights</h2>
+      <img
+        src="https://storage.googleapis.com/acciojob-open-file-collections/flight-search.png"
+        alt="Flight Search"
+        style={{ width: "60%", maxWidth: "600px" }}
+      />
+    </div>
+  );
+};
+
+const FlightBooking = () => {
+  return (
+    <div style={{ textAlign: "center" }}>
+      <h2>Passenger Details</h2>
+      <img
+        src="https://storage.googleapis.com/acciojob-open-file-collections/flight-booking.png"
+        alt="Flight Booking"
+        style={{ width: "60%", maxWidth: "600px" }}
+      />
+    </div>
+  );
+};
+
+const Confirmation = () => {
+  return (
+    <div style={{ textAlign: "center" }}>
+      <h2>Booking Confirmed!</h2>
+      <img
+        src="https://storage.googleapis.com/acciojob-open-file-collections/confirmation.png"
+        alt="Confirmation"
+        style={{ width: "60%", maxWidth: "600px" }}
+      />
+    </div>
+  );
+};
 
 const App = () => {
   return (
